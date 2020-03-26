@@ -7,7 +7,6 @@
  @IDE  : PyCharm
 ------------------------------------
 '''
-
 import os
 
 import logging
@@ -16,18 +15,20 @@ from scripts.handle_config import HandleConfig
 
 import scripts.path_constants
 
+from scripts.path_constants import CONFIG_LOG
+
 
 class HandleLog:
 
     '''
         log日志封装类
     '''
-    def __init__(self, filename):
+    def __init__(self):
         '''
             读取 /home/want/PycharmProjects/TestAPI/configs/log_config.conf
             目录下的配置文件
         '''
-        do_config = HandleConfig(os.path.join(scripts.path_constants.CONFIGS_PATH, filename))
+        do_config = HandleConfig(CONFIG_LOG)
 
         # 创建日志收集器对象
         self.log = logging.getLogger(do_config.get_value('log', 'log_name'))
@@ -65,11 +66,12 @@ class HandleLog:
         return self.log
 
 
+do_log = HandleLog().get_logs()
+
 if __name__ == '__main__':
-    log = HandleLog(scripts.path_constants.CONFIG_LOG).get_logs()
+    log = HandleLog().get_logs()
     log.debug('debug')
     log.error('error')
     log.info('info')
     log.warning('warning')
     log.critical('critical')
-    pass

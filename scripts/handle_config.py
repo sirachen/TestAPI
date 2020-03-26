@@ -12,7 +12,7 @@ from configparser import ConfigParser
 
 import os
 
-import scripts.path_constants
+from scripts.path_constants import CONFIG_MYSQL
 
 
 class HandleConfig:
@@ -22,16 +22,16 @@ class HandleConfig:
 
     def __init__(self, filename):
         '''
-            filename : 要读取的配合文件名
+            filename : 要读取的配置文件名
         '''
         # 创建配置文件对象
         self.config = ConfigParser()
         # 读取配置文件
-        self.config.read(os.path.join(scripts.path_constants.CONFIGS_PATH, filename), encoding='utf-8')
+        self.config.read(filename, encoding='utf-8')
 
     def get_value(self, section, option, type=None):
         '''
-            执行 get_value 方法,会返回查到的配置文件的内容
+            get_value 方法,会返回查到的配置文件的内容
             @section : config 方法中的区域名
             @option : config 方法中的键名
         '''
@@ -51,6 +51,6 @@ class HandleConfig:
 
 
 if __name__ == '__main__':
-    han = HandleConfig(scripts.path_constants.CONFIG_MYSQL)
+    han = HandleConfig(CONFIG_MYSQL)
     req = han.get_value('mysql', 'mysql_is', 'BooL')
     print(req)

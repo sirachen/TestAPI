@@ -13,13 +13,13 @@ from openpyxl import load_workbook
 
 import os
 
-import scripts.path_constants
+from scripts.path_constants import DATA_CASES
 
 
 class HandleExcel:
 
-    def __init__(self, filename, sheetname=None):
-        self.filename = os.path.join(scripts.path_constants.DATAS_PATH, filename)
+    def __init__(self, sheetname=None):
+        self.filename = DATA_CASES
         self.sheetname = sheetname
 
     def get_cases(self):
@@ -64,8 +64,7 @@ class HandleExcel:
 
 
 if __name__ == '__main__':
-    filename = scripts.path_constants.DATA_CASES
-    handle_excel = HandleExcel(filename)
+    handle_excel = HandleExcel()
     print(handle_excel.get_cases())
     print(handle_excel.get_case(row=1))
     # handle_excel.write_cell(5, 6, 'a', 'b')
