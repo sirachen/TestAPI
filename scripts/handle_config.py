@@ -10,8 +10,6 @@
 
 from configparser import ConfigParser
 
-import os
-
 from scripts.path_constants import CONFIG_MYSQL
 
 
@@ -20,7 +18,7 @@ class HandleConfig:
         Config配置文件的封装类
     '''
 
-    def __init__(self, filename):
+    def __init__(self, filename=CONFIG_MYSQL):
         '''
             filename : 要读取的配置文件名
         '''
@@ -48,6 +46,19 @@ class HandleConfig:
             return self.config.getboolean(section=section, option=option)
         elif type.lower() == 'float':
             return self.config.getfloat(section=section, option=option)
+        else:
+            return '类型错误'
+
+    @staticmethod
+    def write_config(datas, filename):
+        if isinstance(datas, dict):
+            for value in datas.values():
+                if isinstance(value, dict):
+                    config = ConfigParser()
+                    for key in datas:
+                        config[key] = datas[key]
+                    with open(filename, 'w') as write_file:
+                        config.write(write_file)
 
 
 if __name__ == '__main__':

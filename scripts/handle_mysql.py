@@ -8,40 +8,35 @@
 ------------------------------------
 '''
 
-from configparser import ConfigParser
-
 import pymysql
-
-import os
 
 import random
 
-import scripts.path_constants
+import re
+
+from scripts.path_constants import CONFIG_MYSQL
+
+from scripts.handle_config import HandleConfig
 
 
-class HandleMySql:
+class HandleMysql:
     '''
         PyMysql 的封装类
     '''
 
     def __init__(self):
         # 创建配置文件对象
-        config = ConfigParser()
+        self.config = HandleConfig(CONFIG_MYSQL)
         # 读取配置文件的内容
-        config.read(scripts.path_constants.CONFIG_MYSQL, encoding='utf-8')
+        # self.config.read(CONFIG_MYSQL, encoding='utf-8')
         # 获取配置文件的内容
         section = 'mysql'
-        host = config.get(section, 'mysql_host')
-        user = config.get(section, 'mysql_user')
-        password = config.get(section, 'mysql_password')
-        port = config.getint(section, 'mysql_port')
-        db = config.get(section, 'mysql_db')
         # 创建数据库连接
-        self.connect = pymysql.connect(host=host,
-                                       user=user,
-                                       password=password,
-                                       db=db,
-                                       port=port,
+        self.connect = pymysql.connect(host=self.config.get_value(section, 'mysql_host'),
+                                       user=self.config.get_value(section, 'mysql_user'),
+                                       password=self.config.get_value(section, 'mysql_password'),
+                                       db=self.config.get_value(section, 'mysql_db'),
+                                       port=self.config.get_value(section, 'mysql_port', type='int'),
                                        charset='utf8',
                                        cursorclass=pymysql.cursors.DictCursor)
         # 创建游标对象
@@ -109,7 +104,21 @@ class HandleMySql:
             if not self.is_existed_mobile(mobile):
                 # 如果不存在,将 break 跳出循环
                 break
-        # 将生成的手机号码返回
+        # 并将该手机号码插入到数据库中
+        # 准备好插入的sql语句
+        '''
+            sql = "INSERT INTO `future`.`member`(`Id`," \
+              " `RegName`," \
+              " `Pwd`," \
+              " `MobilePhone`," \
+              " `Type`," \
+              " `LeaveAmount`) VALUES (1," \
+              " 'want'," \
+              " 'want'," \
+              " %s," \
+              " 1," \
+              " 0)"
+        '''
         return mobile
 
     # 关闭方法
@@ -129,7 +138,9 @@ if __name__ == '__main__':
     # do = HandleMySql(scripts.path_constants.CONFIG_MYSQL)
     # do.is_existed_mobile()
 
-    do = HandleMySql()
-    print('不存在的手机号码为：{}'.format(do.create_not_existed_mobile()))
-    do.close()
+    do = HandleMysql()
+    # print('不存在的手机号码为：{}'.format(do.create_not_existed_mobile()))
+    # do.create_mobile()
+    do.is_existed_mobile('17777788888')
+    do.create_not_existed_mobile()
     pass

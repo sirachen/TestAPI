@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d91e4e2-a8e4-456c-ad4a-e113aafe523d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scripts/handle_context1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/file.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/file.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/mysql_config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/configs/mysql_config.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/request_config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/configs/request_config.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/cases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datas/cases.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/data.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/file.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/handle_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/handle_context.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_context.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/handle_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_excel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/handle_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_log.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/handle_mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_mysql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/handle_re.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/handle_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/path_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/path_constants.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +45,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cases" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cases" />
       <recent name="$PROJECT_DIR$/scripts" />
       <recent name="$PROJECT_DIR$/datas" />
       <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$/configs" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/datas" />
+      <recent name="$PROJECT_DIR$/configs" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.handle_re">
-    <configuration name="handle_config" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test_run">
+    <configuration name="handle_context" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TestAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,28 +74,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/handle_config.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="handle_excel" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TestAPI" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/handle_excel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/handle_context.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,7 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="handle_re" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TestAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,11 +112,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/handle_re.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -133,34 +125,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hanle_log" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests in no_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="TestAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/handle_log.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/cases/no_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_register.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="TestAPI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/cases/test_register.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.handle_re" />
+        <item itemvalue="Python.test_run" />
+        <item itemvalue="Python tests.Unittests in test_register.py" />
         <item itemvalue="Python.handle_mysql" />
-        <item itemvalue="Python.handle_excel" />
-        <item itemvalue="Python.hanle_log" />
-        <item itemvalue="Python.handle_config" />
+        <item itemvalue="Python.handle_context" />
+        <item itemvalue="Python tests.Unittests in no_test.py" />
       </list>
     </recent_temporary>
   </component>
@@ -194,46 +193,46 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="734" y="264" width="994" height="602" key="#xdebugger.evaluate" timestamp="1585035006838">
+    <state x="498" y="478" width="994" height="602" key="#xdebugger.evaluate" timestamp="1586250152117">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="734" y="264" width="994" height="602" key="#xdebugger.evaluate/0.28.1920.1052@0.28.1920.1052" timestamp="1585035006838" />
-    <state width="579" height="466" key="DebuggerActiveHint" timestamp="1585220478657">
+    <state x="498" y="478" width="994" height="602" key="#xdebugger.evaluate/0.28.1920.1052@0.28.1920.1052" timestamp="1586250152117" />
+    <state width="1257" height="460" key="DebuggerActiveHint" timestamp="1585660546805">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="579" height="466" key="DebuggerActiveHint/0.28.1920.1052@0.28.1920.1052" timestamp="1585220478657" />
-    <state width="1893" height="280" key="GridCell.Tab.0.bottom" timestamp="1585235038069">
+    <state width="1257" height="460" key="DebuggerActiveHint/0.28.1920.1052@0.28.1920.1052" timestamp="1585660546805" />
+    <state width="1893" height="183" key="GridCell.Tab.0.bottom" timestamp="1586252069172">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="280" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585235038069" />
-    <state width="1893" height="280" key="GridCell.Tab.0.center" timestamp="1585235038069">
+    <state width="1893" height="183" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1586252069172" />
+    <state width="1893" height="183" key="GridCell.Tab.0.center" timestamp="1586252069172">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="280" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585235038069" />
-    <state width="1893" height="280" key="GridCell.Tab.0.left" timestamp="1585235038069">
+    <state width="1893" height="183" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1586252069172" />
+    <state width="1893" height="183" key="GridCell.Tab.0.left" timestamp="1586252069172">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="280" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585235038069" />
-    <state width="1893" height="280" key="GridCell.Tab.0.right" timestamp="1585235038069">
+    <state width="1893" height="183" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1586252069172" />
+    <state width="1893" height="183" key="GridCell.Tab.0.right" timestamp="1586252069172">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="280" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585235038069" />
-    <state width="1893" height="280" key="GridCell.Tab.1.bottom" timestamp="1585235038070">
+    <state width="1893" height="183" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1586252069172" />
+    <state width="1893" height="213" key="GridCell.Tab.1.bottom" timestamp="1586251890639">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="280" key="GridCell.Tab.1.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585235038070" />
-    <state width="1893" height="280" key="GridCell.Tab.1.center" timestamp="1585235038070">
+    <state width="1893" height="213" key="GridCell.Tab.1.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1586251890639" />
+    <state width="1893" height="213" key="GridCell.Tab.1.center" timestamp="1586251890638">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="280" key="GridCell.Tab.1.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585235038070" />
-    <state width="1893" height="280" key="GridCell.Tab.1.left" timestamp="1585235038069">
+    <state width="1893" height="213" key="GridCell.Tab.1.center/0.28.1920.1052@0.28.1920.1052" timestamp="1586251890638" />
+    <state width="1893" height="213" key="GridCell.Tab.1.left" timestamp="1586251890638">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="280" key="GridCell.Tab.1.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585235038069" />
-    <state width="1893" height="280" key="GridCell.Tab.1.right" timestamp="1585235038070">
+    <state width="1893" height="213" key="GridCell.Tab.1.left/0.28.1920.1052@0.28.1920.1052" timestamp="1586251890638" />
+    <state width="1893" height="213" key="GridCell.Tab.1.right" timestamp="1586251890638">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="280" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585235038070" />
+    <state width="1893" height="213" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1586251890638" />
     <state x="495" y="197" key="SettingsEditor" timestamp="1585200255215">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -242,6 +241,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state width="498" height="449" key="SwitcherDM/0.28.1920.1052@0.28.1920.1052" timestamp="1585041685773" />
+    <state width="960" height="526" key="XDebugger.FullValuePopup" timestamp="1585660533261">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="960" height="526" key="XDebugger.FullValuePopup/0.28.1920.1052@0.28.1920.1052" timestamp="1585660533261" />
     <state x="623" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1585212292158">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -252,8 +255,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scripts/handle_request.py</url>
-          <line>60</line>
+          <line>58</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/handle_user.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cases/test_register.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/handle_context.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

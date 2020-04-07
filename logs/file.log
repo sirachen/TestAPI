@@ -1,16 +1,108 @@
-2020-03-26 19:16:30,383 - [ERROR] - [msg]:[error] - log - 70 line
-2020-03-26 19:16:30,383 - [INFO] - [msg]:[info] - log - 71 line
-2020-03-26 19:16:30,383 - [WARNING] - [msg]:[warning] - log - 72 line
-2020-03-26 19:16:30,383 - [CRITICAL] - [msg]:[critical] - log - 73 line
-2020-03-26 19:19:52,302 - [ERROR] - [msg]:[error] - log - 70 line
-2020-03-26 19:19:52,302 - [INFO] - [msg]:[info] - log - 71 line
-2020-03-26 19:19:52,302 - [WARNING] - [msg]:[warning] - log - 72 line
-2020-03-26 19:19:52,302 - [CRITICAL] - [msg]:[critical] - log - 73 line
-2020-03-26 19:21:19,058 - [ERROR] - [msg]:[error] - log - 71 line
-2020-03-26 19:21:19,058 - [INFO] - [msg]:[info] - log - 72 line
-2020-03-26 19:21:19,058 - [WARNING] - [msg]:[warning] - log - 73 line
-2020-03-26 19:21:19,059 - [CRITICAL] - [msg]:[critical] - log - 74 line
-2020-03-26 19:25:50,230 - [ERROR] - [msg]:[error] - log - 72 line
-2020-03-26 19:25:50,230 - [INFO] - [msg]:[info] - log - 73 line
-2020-03-26 19:25:50,230 - [WARNING] - [msg]:[warning] - log - 74 line
-2020-03-26 19:25:50,230 - [CRITICAL] - [msg]:[critical] - log - 75 line
+2020-03-31 22:17:52,722 - [ERROR] - [msg]:[正常注册-全不为空,执行结果为:fail_msg具体异常为'正常注册-全不为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 正常注册-全不为空] - log - 108 line
+2020-03-31 22:17:52,722 - [ERROR] - [msg]:[正常注册-全不为空,执行结果为:fail_msg具体异常为'正常注册-全不为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 正常注册-全不为空] - log - 108 line
+2020-03-31 22:17:53,288 - [ERROR] - [msg]:[正常注册用户名为空,执行结果为:fail_msg具体异常为'正常注册用户名为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 正常注册用户名为空] - log - 108 line
+2020-03-31 22:17:53,288 - [ERROR] - [msg]:[正常注册用户名为空,执行结果为:fail_msg具体异常为'正常注册用户名为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 正常注册用户名为空] - log - 108 line
+2020-03-31 22:17:53,415 - [ERROR] - [msg]:[重复注册,执行结果为:fail_msg具体异常为'重复注册' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 重复注册] - log - 108 line
+2020-03-31 22:17:53,415 - [ERROR] - [msg]:[重复注册,执行结果为:fail_msg具体异常为'重复注册' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 重复注册] - log - 108 line
+2020-03-31 22:17:53,538 - [ERROR] - [msg]:[手机号为空,执行结果为:fail_msg具体异常为'手机号为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 手机号为空] - log - 108 line
+2020-03-31 22:17:53,538 - [ERROR] - [msg]:[手机号为空,执行结果为:fail_msg具体异常为'手机号为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 手机号为空] - log - 108 line
+2020-03-31 22:17:53,675 - [ERROR] - [msg]:[密码为空,执行结果为:fail_msg具体异常为'密码为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 密码为空] - log - 108 line
+2020-03-31 22:17:53,675 - [ERROR] - [msg]:[密码为空,执行结果为:fail_msg具体异常为'密码为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 密码为空] - log - 108 line
+2020-03-31 22:17:54,354 - [ERROR] - [msg]:[密码长度小于6位,执行结果为:fail_msg具体异常为'密码长度小于6位' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 密码长度小于6位] - log - 108 line
+2020-03-31 22:17:54,354 - [ERROR] - [msg]:[密码长度小于6位,执行结果为:fail_msg具体异常为'密码长度小于6位' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 密码长度小于6位] - log - 108 line
+2020-03-31 22:17:54,914 - [ERROR] - [msg]:[密码长度大于18,执行结果为:fail_msg具体异常为'密码长度大于18' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 密码长度大于18] - log - 108 line
+2020-03-31 22:17:54,914 - [ERROR] - [msg]:[密码长度大于18,执行结果为:fail_msg具体异常为'密码长度大于18' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 密码长度大于18] - log - 108 line
+2020-03-31 22:17:55,031 - [ERROR] - [msg]:[手机号不足11位,执行结果为:fail_msg具体异常为'手机号不足11位' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 手机号不足11位] - log - 108 line
+2020-03-31 22:17:55,031 - [ERROR] - [msg]:[手机号不足11位,执行结果为:fail_msg具体异常为'手机号不足11位' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 手机号不足11位] - log - 108 line
+2020-03-31 22:17:55,172 - [ERROR] - [msg]:[手机号包大于11位,执行结果为:fail_msg具体异常为'手机号包大于11位' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 手机号包大于11位] - log - 108 line
+2020-03-31 22:17:55,172 - [ERROR] - [msg]:[手机号包大于11位,执行结果为:fail_msg具体异常为'手机号包大于11位' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 手机号包大于11位] - log - 108 line
+2020-03-31 22:18:08,546 - [ERROR] - [msg]:[正常注册-全不为空,执行结果为:fail_msg具体异常为'正常注册-全不为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 正常注册-全不为空] - log - 108 line
+2020-03-31 22:18:08,546 - [ERROR] - [msg]:[正常注册-全不为空,执行结果为:fail_msg具体异常为'正常注册-全不为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 正常注册-全不为空] - log - 108 line
+2020-03-31 22:18:09,092 - [ERROR] - [msg]:[正常注册用户名为空,执行结果为:fail_msg具体异常为'正常注册用户名为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 正常注册用户名为空] - log - 108 line
+2020-03-31 22:18:09,092 - [ERROR] - [msg]:[正常注册用户名为空,执行结果为:fail_msg具体异常为'正常注册用户名为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 正常注册用户名为空] - log - 108 line
+2020-03-31 22:18:09,215 - [ERROR] - [msg]:[重复注册,执行结果为:fail_msg具体异常为'重复注册' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 重复注册] - log - 108 line
+2020-03-31 22:18:09,215 - [ERROR] - [msg]:[重复注册,执行结果为:fail_msg具体异常为'重复注册' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 重复注册] - log - 108 line
+2020-03-31 22:18:09,337 - [ERROR] - [msg]:[手机号为空,执行结果为:fail_msg具体异常为'手机号为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 手机号为空] - log - 108 line
+2020-03-31 22:18:09,337 - [ERROR] - [msg]:[手机号为空,执行结果为:fail_msg具体异常为'手机号为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 手机号为空] - log - 108 line
+2020-03-31 22:18:09,470 - [ERROR] - [msg]:[密码为空,执行结果为:fail_msg具体异常为'密码为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 密码为空] - log - 108 line
+2020-03-31 22:18:09,470 - [ERROR] - [msg]:[密码为空,执行结果为:fail_msg具体异常为'密码为空' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 密码为空] - log - 108 line
+2020-03-31 22:18:10,045 - [ERROR] - [msg]:[密码长度小于6位,执行结果为:fail_msg具体异常为'密码长度小于6位' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 密码长度小于6位] - log - 108 line
+2020-03-31 22:18:10,045 - [ERROR] - [msg]:[密码长度小于6位,执行结果为:fail_msg具体异常为'密码长度小于6位' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 密码长度小于6位] - log - 108 line
+2020-03-31 22:18:10,958 - [ERROR] - [msg]:[密码长度大于18,执行结果为:fail_msg具体异常为'密码长度大于18' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 密码长度大于18] - log - 108 line
+2020-03-31 22:18:10,958 - [ERROR] - [msg]:[密码长度大于18,执行结果为:fail_msg具体异常为'密码长度大于18' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 密码长度大于18] - log - 108 line
+2020-03-31 22:18:11,083 - [ERROR] - [msg]:[手机号不足11位,执行结果为:fail_msg具体异常为'手机号不足11位' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 手机号不足11位] - log - 108 line
+2020-03-31 22:18:11,083 - [ERROR] - [msg]:[手机号不足11位,执行结果为:fail_msg具体异常为'手机号不足11位' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 手机号不足11位] - log - 108 line
+2020-03-31 22:18:11,200 - [ERROR] - [msg]:[手机号包大于11位,执行结果为:fail_msg具体异常为'手机号包大于11位' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 手机号包大于11位] - log - 108 line
+2020-03-31 22:18:11,200 - [ERROR] - [msg]:[手机号包大于11位,执行结果为:fail_msg具体异常为'手机号包大于11位' not found in '{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' : 手机号包大于11位] - log - 108 line
+2020-03-31 22:18:44,285 - [INFO] - [msg]:[正常注册-全不为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:44,285 - [INFO] - [msg]:[正常注册-全不为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:44,863 - [INFO] - [msg]:[正常注册用户名为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:44,863 - [INFO] - [msg]:[正常注册用户名为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:44,982 - [INFO] - [msg]:[重复注册,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:44,982 - [INFO] - [msg]:[重复注册,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:45,109 - [INFO] - [msg]:[手机号为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:45,109 - [INFO] - [msg]:[手机号为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:45,237 - [INFO] - [msg]:[密码为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:45,237 - [INFO] - [msg]:[密码为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:45,880 - [INFO] - [msg]:[密码长度小于6位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:45,880 - [INFO] - [msg]:[密码长度小于6位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:46,492 - [INFO] - [msg]:[密码长度大于18,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:46,492 - [INFO] - [msg]:[密码长度大于18,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:46,609 - [INFO] - [msg]:[手机号不足11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:46,609 - [INFO] - [msg]:[手机号不足11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:46,726 - [INFO] - [msg]:[手机号包大于11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:18:46,726 - [INFO] - [msg]:[手机号包大于11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:22,357 - [INFO] - [msg]:[正常注册-全不为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:22,357 - [INFO] - [msg]:[正常注册-全不为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:23,047 - [INFO] - [msg]:[正常注册用户名为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:23,047 - [INFO] - [msg]:[正常注册用户名为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:23,165 - [INFO] - [msg]:[重复注册,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:23,165 - [INFO] - [msg]:[重复注册,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:23,298 - [INFO] - [msg]:[手机号为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:23,298 - [INFO] - [msg]:[手机号为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:23,412 - [INFO] - [msg]:[密码为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:23,412 - [INFO] - [msg]:[密码为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:23,985 - [INFO] - [msg]:[密码长度小于6位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:23,985 - [INFO] - [msg]:[密码长度小于6位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:24,678 - [INFO] - [msg]:[密码长度大于18,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:24,678 - [INFO] - [msg]:[密码长度大于18,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:24,801 - [INFO] - [msg]:[手机号不足11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:24,801 - [INFO] - [msg]:[手机号不足11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:24,917 - [INFO] - [msg]:[手机号包大于11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:19:24,917 - [INFO] - [msg]:[手机号包大于11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:24,830 - [INFO] - [msg]:[正常注册-全不为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:24,830 - [INFO] - [msg]:[正常注册-全不为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:25,508 - [INFO] - [msg]:[正常注册用户名为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:25,508 - [INFO] - [msg]:[正常注册用户名为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:25,634 - [INFO] - [msg]:[重复注册,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:25,634 - [INFO] - [msg]:[重复注册,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:25,756 - [INFO] - [msg]:[手机号为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:25,756 - [INFO] - [msg]:[手机号为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:25,883 - [INFO] - [msg]:[密码为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:25,883 - [INFO] - [msg]:[密码为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:26,545 - [INFO] - [msg]:[密码长度小于6位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:26,545 - [INFO] - [msg]:[密码长度小于6位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:27,097 - [INFO] - [msg]:[密码长度大于18,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:27,097 - [INFO] - [msg]:[密码长度大于18,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:27,213 - [INFO] - [msg]:[手机号不足11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:27,213 - [INFO] - [msg]:[手机号不足11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:27,366 - [INFO] - [msg]:[手机号包大于11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:27,366 - [INFO] - [msg]:[手机号包大于11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:41,770 - [INFO] - [msg]:[正常注册-全不为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:41,770 - [INFO] - [msg]:[正常注册-全不为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:42,421 - [INFO] - [msg]:[正常注册用户名为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:42,421 - [INFO] - [msg]:[正常注册用户名为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:42,535 - [INFO] - [msg]:[重复注册,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:42,535 - [INFO] - [msg]:[重复注册,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:42,655 - [INFO] - [msg]:[手机号为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:42,655 - [INFO] - [msg]:[手机号为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:42,789 - [INFO] - [msg]:[密码为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:42,789 - [INFO] - [msg]:[密码为空,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:43,433 - [INFO] - [msg]:[密码长度小于6位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:43,433 - [INFO] - [msg]:[密码长度小于6位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:44,056 - [INFO] - [msg]:[密码长度大于18,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:44,056 - [INFO] - [msg]:[密码长度大于18,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:44,175 - [INFO] - [msg]:[手机号不足11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:44,175 - [INFO] - [msg]:[手机号不足11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:44,297 - [INFO] - [msg]:[手机号包大于11位,执行结果为:success_msg] - log - 100 line
+2020-03-31 22:25:44,297 - [INFO] - [msg]:[手机号包大于11位,执行结果为:success_msg] - log - 100 line

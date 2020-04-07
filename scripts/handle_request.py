@@ -14,8 +14,6 @@ from scripts.handle_config import HandleConfig
 
 import scripts.path_constants
 
-import os
-
 
 class HandleRequest:
     '''
@@ -59,15 +57,15 @@ class HandleRequest:
 
 if __name__ == '__main__':
     do_config = HandleConfig(scripts.path_constants.CONFIG_REQUEST)
-    head_url = do_config.get_value('head_url', 'url')
     mobile = do_config.get_value('user', 'mobile', type='int')
     pwd = do_config.get_value('user', 'password', type='int')
-    login_url = f'{head_url}futureloan/mvc/api/member/login'
+
+    login_url = do_config.get_value('url', 'login_url')
     login_data = {
         'mobilephone': mobile,
         'pwd': pwd
     }
-    recharge_url = f'{head_url}futureloan/mvc/api/member/recharge'
+    recharge_url = do_config.get_value('url', 'recharge_url')
     recharge_data = {
         'mobilephone': mobile,
         'amount': 100
@@ -78,5 +76,11 @@ if __name__ == '__main__':
 
     print(login_req.json())
     print(recharge_req.json())
+
+    register_url = do_config.get_value('url', 'register_url')
+    register_req = do_handle_request.send_request(url=register_url,
+                                                  data='{"mobilephone": "15913902765", "pwd": "123456789", "regname": "www"}',
+                                                  method='post')
+    print(register_req)
 
     pass
