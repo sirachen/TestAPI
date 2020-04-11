@@ -45,7 +45,7 @@ class HandleExcel:
 
         return self.get_cases()[row-1]
 
-    def write_cell(self, row, column, expected, actual, result):
+    def write_cell(self, row, column, actual, result):
 
         write_work_book = load_workbook(self.filename)
 
@@ -55,13 +55,30 @@ class HandleExcel:
             write_worksheet = write_work_book[self.sheetname]
 
         if isinstance(row, int) and (2 <= row <= write_worksheet.max_row):
-            write_worksheet.cell(row=row, column=column, value=expected)
-            write_worksheet.cell(row=row, column=column+1, value=actual)
-            write_worksheet.cell(row=row, column=column+2, value=result)
+            write_worksheet.cell(row=row, column=column, value=actual)
+            write_worksheet.cell(row=row, column=column, value=result)
             write_work_book.save(self.filename)
             write_work_book.close()
         else:
             print('行号有误,应为大于2的整数')
+
+    # def write_cell(self, row, column, expected, actual, result):
+    #
+    #     write_work_book = load_workbook(self.filename)
+    #
+    #     if self.sheetname is None:
+    #         write_worksheet = write_work_book.active
+    #     else:
+    #         write_worksheet = write_work_book[self.sheetname]
+    #
+    #     if isinstance(row, int) and (2 <= row <= write_worksheet.max_row):
+    #         write_worksheet.cell(row=row, column=column, value=expected)
+    #         write_worksheet.cell(row=row, column=column+1, value=actual)
+    #         write_worksheet.cell(row=row, column=column+2, value=result)
+    #         write_work_book.save(self.filename)
+    #         write_work_book.close()
+    #     else:
+    #         print('行号有误,应为大于2的整数')
 
 
 if __name__ == '__main__':

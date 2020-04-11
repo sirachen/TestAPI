@@ -3,7 +3,7 @@
 ------------------------------------
  @Auth : want
  @Time : 2020/3/5 下午6:13
- @File : test_register.py
+ @File : test_01_register.py
  @IDE  : PyCharm
 ------------------------------------
 '''
@@ -68,15 +68,13 @@ class TestCaseRegister(unittest.TestCase):
             # self.assertIn(result_except, result_real, msg=msg)
             self.one_file.write('{},执行的结果为:{}\n'.format(msg, self.pass_result))
             self.handleExcel.write_cell(row=one_case['case_id'] + 1,
-                                        column=6,
-                                        expected=msg,
+                                        column=7,
                                         actual=result_real,
                                         result=self.pass_result)
         except AssertionError as err:
             self.one_file.write('{}执行的结果为:{},具体的异常为:{}\n'.format(msg, self.fail_result, err))
             self.handleExcel.write_cell(row=one_case['case_id'] + 1,
-                                        column=6,
-                                        expected=msg,
+                                        column=7,
                                         actual=result_real,
                                         result=self.fail_result)
             raise err
