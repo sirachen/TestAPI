@@ -39,8 +39,7 @@ class TestCaseRegister(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        log_filename = REPORT_REGISTER_FILE
-        cls.one_file = open(log_filename, mode='a', encoding='utf-8')
+        cls.one_file = open(REPORT_REGISTER_FILE, mode='a', encoding='utf-8')
         cls.one_file.write('{:=^40s}\n'.format('开始执行用例'))
 
     @classmethod

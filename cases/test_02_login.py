@@ -31,7 +31,6 @@ class TestCaseLogin(unittest.TestCase):
     do_request = HandleRequest()
 
     do_config = HandleConfig(CONFIG_REQUEST)
-    head_url = do_config.get_value('url', 'head_url')
 
     do_excel = HandleExcel(DATA_CASES, 'login')
     cases = do_excel.get_cases()
@@ -46,8 +45,7 @@ class TestCaseLogin(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        log_filename = REPORT_LOGIN_FILE
-        cls.one_file = open(log_filename, mode='a', encoding='utf-8')
+        cls.one_file = open(REPORT_LOGIN_FILE, mode='a', encoding='utf-8')
         cls.one_file.write('{:=^40s}\n'.format('开始执行用例'))
 
     @classmethod
@@ -58,7 +56,7 @@ class TestCaseLogin(unittest.TestCase):
     @data(*cases)
     def test_login(self, one_case):
         # 拼接完整的url
-        url = self.head_url + one_case['url']
+        url = self.do_config.get_value('url', 'head_url') + one_case['url']
         # 获取请求方式
         method = one_case['method']
         # 获取input_data数据

@@ -56,7 +56,7 @@ class HandleExcel:
 
         if isinstance(row, int) and (2 <= row <= write_worksheet.max_row):
             write_worksheet.cell(row=row, column=column, value=actual)
-            write_worksheet.cell(row=row, column=column, value=result)
+            write_worksheet.cell(row=row, column=column + 1, value=result)
             write_work_book.save(self.filename)
             write_work_book.close()
         else:

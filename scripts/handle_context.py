@@ -30,6 +30,9 @@ class Handle_Re:
     # 登录已存在手机号密码的参数化信息
     investors_login_pwd = r"\${investors_login_pwd}"
 
+    # 充值已存在手机号码参数化信息
+    # investors_login_mobile = r"\${investors_login_mobile}"
+
     do_config = HandleConfig(CONFIG_USER)
 
     @classmethod
@@ -68,6 +71,7 @@ class Handle_Re:
 
     @classmethod
     def register_user_mobile_replace(cls, data):
+        # 注册参数化
         data = cls.register_not_existed_replace(data)
         data = cls.register_have_existed_replace(data)
         return data
@@ -87,7 +91,15 @@ class Handle_Re:
         return data
 
     @classmethod
+    def recharge_user_mobile_pwd_replace(cls, data):
+        # 登录参数化
+        data = cls.login_have_existed_mobile_replace(data)
+        data = cls.login_have_existed_pwd_replace(data)
+        return data
+
+    @classmethod
     def login_user_mobile_pwd_replace(cls, data):
+        # 充值参数化
         data = cls.login_have_existed_mobile_replace(data)
         data = cls.login_have_existed_pwd_replace(data)
         return data
