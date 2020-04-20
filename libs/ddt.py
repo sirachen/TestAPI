@@ -124,19 +124,23 @@ def mk_test_name(name, value, index=0):
 
     # Add zeros before index to keep order
     index = "{0:0{1}}".format(index + 1, index_len)
+    # 添加了对字典数据的处理。
     if not is_trivial(value) and type(value) is not dict:
         return "{0}_{1}".format(name, index)
+    # 如果数据是字典，则获取字典当中的api_name对应的值，加到测试用例名称中。
     if type(value) is dict:
         try:
-            value = value['case_title']
+            value = value["title"]  # case_name作为value值
         except:
             return "{0}_{1}".format(name, index)
     try:
         value = str(value)
     except UnicodeEncodeError:
+        # fallback for python2
         value = value.encode('ascii', 'backslashreplace')
     test_name = "{0}_{1}_{2}".format(name, index, value)
     return re.sub(r'\W|^(?=\d)', '_', test_name)
+
 
 def feed_data(func, new_name, test_data_docstring, *args, **kwargs):
     """

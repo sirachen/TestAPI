@@ -36,9 +36,11 @@ LOG_FILE = os.path.join(LOGS_PATH, 'file.log')
 
 # reports目录
 REPORTS_PATH = os.path.join(BASE_PATH, 'reports')
-REPORT_REGISTER_FILE = os.path.join(REPORTS_PATH, 'register_record.txt')
-REPORT_LOGIN_FILE = os.path.join(REPORTS_PATH, 'login_record.txt')
-REPORT_RECHARGE_FILE = os.path.join(REPORTS_PATH, 'recharge_record.txt')
+REPORTS_ALL_PATH = os.path.join(REPORTS_PATH, 'reports.txt')
+REPORT_REGISTER_FILE = os.path.join(REPORTS_PATH, 'test_01_register_record.txt')
+REPORT_LOGIN_FILE = os.path.join(REPORTS_PATH, 'test_02_login_record.txt')
+REPORT_RECHARGE_FILE = os.path.join(REPORTS_PATH, 'test_03_recharge_record.txt')
+REPORT_ADD_FILE = os.path.join(REPORTS_PATH, 'test_04_add_record.txt')
 
 # scripts目录
 SCRIPTS_PATH = os.path.join(BASE_PATH, 'scripts')

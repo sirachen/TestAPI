@@ -27,27 +27,41 @@ class HandleConfig:
         # 读取配置文件
         self.config.read(filename, encoding='utf-8')
 
-    def get_value(self, section, option, type=None):
+    def get_value(self, section, option):
         '''
             get_value 方法,会返回查到的配置文件的内容
             @section : config 方法中的区域名
             @option : config 方法中的键名
         '''
+        # 返回 config.get 方法获取的内容
+        return self.config.get(section=section, option=option)
 
-        # 默认 type 为 None ,即为默认get方法
-        if type is None:
-            # 返回 config.get 方法获取的内容
-            return self.config.get(section=section, option=option)
-        # 转换 type 的内容全部为小写,type 内容为 int时
-        elif type.lower() == 'int':
-            # 返回 config.getint 方法获取的正数内容
-            return self.config.getint(section=section, option=option)
-        elif type.lower() == 'bool':
-            return self.config.getboolean(section=section, option=option)
-        elif type.lower() == 'float':
-            return self.config.getfloat(section=section, option=option)
-        else:
-            return '类型错误'
+    def get_int(self, section, option):
+        '''
+            get_int 方法,会返回查到的配置文件的内容以整数类型返回
+            @section : config 方法中的区域名
+            @option : config 方法中的键名
+        '''
+        # 返回 config.getint 方法获取的整数类型的内容
+        return self.config.getint(section=section, option=option)
+
+    def get_boolean(self, section, option):
+        '''
+            get_boolean 方法,会返回查到的配置文件的内容以boolean类型返回
+            @section : config 方法中的区域名
+            @option : config 方法中的键名
+        '''
+        # 返回 config.getboolean 方法获取的boolean类型的内容
+        return self.config.getboolean(section=section, option=option)
+
+    def get_float(self, section, option):
+        '''
+            get_float 方法,会返回查到的配置文件的内容以float类型返回
+            @section : config 方法中的区域名
+            @option : config 方法中的键名
+        '''
+        # 返回 config.getfloat 方法获取的float类型的内容
+        return self.config.getfloat(section=section, option=option)
 
     @staticmethod
     def write_config(datas, filename):

@@ -116,9 +116,9 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> by:want</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-04-15 19:32:33</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:10.315565</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 25，通过 25，通过率= 100.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-04-20 23:05:37</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:21.310122</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 50，通过 50，通过率= 100.00%</p>
 
 <p class='description'>报告输出完成</p>
 </div>
@@ -127,8 +127,8 @@ function html_escape(s) {
 <p id='show_detail_line'>
 <a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 25 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 25 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 50 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 50 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -149,7 +149,7 @@ function html_escape(s) {
 </tr>
 
 <tr class='passClass warning'>
-    <td>test_01_register.TestCaseRegister</td>
+    <td>test_01_register.TestRegister</td>
     <td class="text-center">9</td>
     <td class="text-center">9</td>
     <td class="text-center">0</td>
@@ -158,47 +158,47 @@ function html_escape(s) {
 </tr>
 
 <tr id='pt1_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_1</div></td>
+    <td class='passCase'><div class='testcase'>test_register_1_正常注册_全不为空</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt1_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_2</div></td>
+    <td class='passCase'><div class='testcase'>test_register_2_正常注册用户名为空</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt1_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_3</div></td>
+    <td class='passCase'><div class='testcase'>test_register_3_重复注册</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt1_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_4</div></td>
+    <td class='passCase'><div class='testcase'>test_register_4_手机号为空</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt1_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_5</div></td>
+    <td class='passCase'><div class='testcase'>test_register_5_密码为空</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt1_6' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_6</div></td>
+    <td class='passCase'><div class='testcase'>test_register_6_密码长度小于6位</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt1_7' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_7</div></td>
+    <td class='passCase'><div class='testcase'>test_register_7_密码长度大于18</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt1_8' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_8</div></td>
+    <td class='passCase'><div class='testcase'>test_register_8_手机号不足11位</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt1_9' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_9</div></td>
+    <td class='passCase'><div class='testcase'>test_register_9_手机号包大于11位</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
@@ -212,27 +212,27 @@ function html_escape(s) {
 </tr>
 
 <tr id='pt2_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_1</div></td>
+    <td class='passCase'><div class='testcase'>test_login_1_正常登录</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt2_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_2</div></td>
+    <td class='passCase'><div class='testcase'>test_login_2_手机号为空</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt2_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_3</div></td>
+    <td class='passCase'><div class='testcase'>test_login_3_密码为空</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt2_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_4</div></td>
+    <td class='passCase'><div class='testcase'>test_login_4_手机号错误</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt2_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_5</div></td>
+    <td class='passCase'><div class='testcase'>test_login_5_密码错误</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
@@ -300,10 +300,153 @@ function html_escape(s) {
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
+<tr class='passClass warning'>
+    <td>test_04_add.TestAdd</td>
+    <td class="text-center">10</td>
+    <td class="text-center">10</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',10)" class="detail" id='c4'>详细</a></td>
+</tr>
+
+<tr id='pt4_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_01</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_02</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_03</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_04</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_05</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_06</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_07</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_08</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_09</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_10</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_05_invest.TestInvest</td>
+    <td class="text-center">15</td>
+    <td class="text-center">15</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c5',15)" class="detail" id='c5'>详细</a></td>
+</tr>
+
+<tr id='pt5_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_01</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_02</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_03</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_04</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_05</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_06</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_07</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_08</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_09</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_10</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_11' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_11</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_12' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_12</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_13' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_13</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_14' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_14</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_15' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_15</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>25</td>
-    <td>25</td>
+    <td>50</td>
+    <td>50</td>
     <td>0</td>
     <td>0</td>
     <td>通过率：100.00%</td>

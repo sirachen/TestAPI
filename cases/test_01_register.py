@@ -20,11 +20,11 @@ from scripts.handle_request import HandleRequest
 
 from libs.ddt import ddt, data
 
-from scripts.path_constants import DATA_CASES, REPORT_REGISTER_FILE, CONFIG_REQUEST
+from scripts.path_constants import DATA_CASES, REPORTS_ALL_PATH, CONFIG_REQUEST
 
 
 @ddt
-class TestCaseRegister(unittest.TestCase):
+class TestRegister(unittest.TestCase):
     handleExcel = HandleExcel(DATA_CASES, 'register')
     cases = handleExcel.get_cases()
 
@@ -37,41 +37,41 @@ class TestCaseRegister(unittest.TestCase):
     # 用例执行不通过信息
     fail_result = do_config.get_value('result', 'fail_result')
 
+    do_re = Handle_Re()
+
     @classmethod
     def setUpClass(cls):
-        cls.one_file = open(REPORT_REGISTER_FILE, mode='a', encoding='utf-8')
-        cls.one_file.write('{:=^40s}\n'.format('开始执行用例'))
+        cls.one_file = open(REPORTS_ALL_PATH, mode='a+', encoding='utf-8')
+        cls.one_file.write('{:=^40s}\n'.format('开始执行注册接口用例'))
 
     @classmethod
     def tearDownClass(cls):
-        cls.one_file.write('{:=^40s}\n\n'.format('用例执行结束'))
+        cls.one_file.write('{:=^40s}\n\n'.format('注册接口用例执行结束'))
         cls.one_file.close()
 
     @data(*cases)
     def test_register(self, one_case):
 
         # 注册接口的url
-        url = self.head_url + one_case['url']
+        new_url = self.head_url + one_case['url']
 
         # 对用例中的数据进行参数化
-        new_data = Handle_Re.register_user_mobile_replace(one_case['input_data'])
+        new_data = self.do_re.register_parameterization(one_case['input_data'])
 
         method = one_case['method']
 
         # 发送注册接口的请求
-        result_real = self.do_request.send_request(url=url, data=eval(new_data), method=method).text
-
-        msg = one_case['title']
+        result_real = self.do_request.send_request(url=new_url, data=eval(new_data), method=method).text
 
         try:
-            # self.assertIn(result_except, result_real, msg=msg)
-            self.one_file.write('{},执行的结果为:{}\n'.format(msg, self.pass_result))
+            self.assertIn(one_case['expected'], result_real, msg='注册接口请求成功')
+            self.one_file.write('{},执行的结果为:{}\n'.format(one_case['title'], self.pass_result))
             self.handleExcel.write_cell(row=one_case['case_id'] + 1,
                                         column=7,
                                         actual=result_real,
                                         result=self.pass_result)
         except AssertionError as err:
-            self.one_file.write('{}执行的结果为:{},具体的异常为:{}\n'.format(msg, self.fail_result, err))
+            self.one_file.write('{}执行的结果为:{},具体的异常为:{}\n'.format(one_case['title'], self.fail_result, err))
             self.handleExcel.write_cell(row=one_case['case_id'] + 1,
                                         column=7,
                                         actual=result_real,

@@ -36,7 +36,7 @@ class HandleMysql:
                                        user=self.config.get_value(section, 'mysql_user'),
                                        password=self.config.get_value(section, 'mysql_password'),
                                        db=self.config.get_value(section, 'mysql_db'),
-                                       port=self.config.get_value(section, 'mysql_port', type='int'),
+                                       port=self.config.get_int(section, 'mysql_port'),
                                        charset='utf8',
                                        cursorclass=pymysql.cursors.DictCursor)
         # 创建游标对象

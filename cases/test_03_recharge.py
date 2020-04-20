@@ -16,7 +16,7 @@ from scripts.handle_excel import HandleExcel
 from scripts.handle_request import HandleRequest
 from scripts.handle_mysql import HandleMysql
 from scripts.handle_config import HandleConfig
-from scripts.path_constants import REPORT_RECHARGE_FILE, CONFIG_REQUEST
+from scripts.path_constants import REPORTS_ALL_PATH, CONFIG_REQUEST
 from scripts.handle_context import Handle_Re
 
 
@@ -33,13 +33,13 @@ class TestRecharge(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.do_mysql = HandleMysql()
-        cls.one_file = open(REPORT_RECHARGE_FILE, mode='a', encoding='utf-8')
-        cls.one_file.write('{:=^40s}\n'.format('开始执行用例'))
+        cls.one_file = open(REPORTS_ALL_PATH, mode='a+', encoding='utf-8')
+        cls.one_file.write('{:=^40s}\n'.format('开始执行充值接口用例'))
 
     @classmethod
     def tearDownClass(cls):
         cls.do_mysql.close()
-        cls.one_file.write('{:=^40s}\n\n'.format('用例执行结束'))
+        cls.one_file.write('{:=^40s}\n\n'.format('充值接口用例执行结束'))
         cls.one_file.close()
 
     @data(*cases)
@@ -49,14 +49,14 @@ class TestRecharge(unittest.TestCase):
         # 获取表格中的请求方法
         method = one_case['method']
         # 获取表格中的接口请求数据
-        input_data = one_case['input_data']
+        # input_data = one_case['input_data']
         # 获取表格中check_sql 字段是否有内容
         have_sql = one_case['check_sql']
         if have_sql:
             # 如果 check_sql 的内容不为空
             #     SELECT LeaveAmount FROM member WHERE MobilePhone="${investors_login_mobile}"
             # 对sql语句进行参数化,并替换check_sql
-            have_sql = self.do_re.recharge_user_mobile_pwd_replace(have_sql)
+            have_sql = self.do_re.recharge_parameterization(have_sql)
             # 去数据库查询充值之前的金额
             recharge_before_amount = self.do_mysql.do_execute(have_sql)
             # 对获取到的数据进行转换,获取到的是decimal格式
@@ -64,17 +64,13 @@ class TestRecharge(unittest.TestCase):
             recharge_before_amount = round(recharge_before_amount, 2)
 
         # 对获取的数据进行参数化
-        new_data = self.do_re.recharge_user_mobile_pwd_replace(input_data)
+        new_data = self.do_re.recharge_parameterization(one_case['input_data'])
 
         # 向接口发送请求数据
         result_data = self.do_request.send_request(url=new_url, data=eval(new_data), method=method).text
 
-        expected = one_case['expected']
-
-        msg = one_case['title']
-
         try:
-            self.assertIn(expected, result_data, msg=msg)
+            self.assertIn(one_case['expected'], result_data, msg='充值接口请求成功')
             if have_sql:
                 # 再次请求数据库,查询充值之后的金额
                 mysql_data = self.do_mysql.do_execute(have_sql)
@@ -101,6 +97,8 @@ class TestRecharge(unittest.TestCase):
                                      column=7,
                                      actual=result_data,
                                      result=self.fail_result)
+            raise err
+        self.do_request.close_request()
 
 
 if __name__ == '__main__':

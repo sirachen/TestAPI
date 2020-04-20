@@ -5,12 +5,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cases/test_01_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/test_01_register.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cases/test_02_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/test_02_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/test_03_recharge.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/test_03_recharge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/request_config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/configs/request_config.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/user_config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/configs/user_config.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datas/datas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datas/datas.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/HTMLTestRunnerNew.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/HTMLTestRunnerNew.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/ddt.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/ddt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/login_record.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/recharge_record.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/register_record.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_2020-04-11_18:07:26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_2020-04-15_19:32:33.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/handle_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/handle_context.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_context.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/handle_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_excel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/handle_mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_mysql.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/path_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/path_constants.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +135,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_03_recharge.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_05_invest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="TestAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,17 +145,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/cases/test_03_recharge.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/cases/test_05_invest.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test_run" />
-        <item itemvalue="Python tests.Unittests in test_03_recharge.py" />
-        <item itemvalue="Python tests.Unittests in test_02_login.py" />
-        <item itemvalue="Python.handle_context" />
         <item itemvalue="Python tests.Unittests in test_01_register.py" />
+        <item itemvalue="Python.handle_context" />
+        <item itemvalue="Python tests.Unittests in test_02_login.py" />
+        <item itemvalue="Python tests.Unittests in test_05_invest.py" />
       </list>
     </recent_temporary>
   </component>
@@ -182,46 +189,46 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="682" y="478" width="994" height="602" key="#xdebugger.evaluate" timestamp="1586949076771">
+    <state x="420" y="478" width="994" height="602" key="#xdebugger.evaluate" timestamp="1587388856338">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="682" y="478" width="994" height="602" key="#xdebugger.evaluate/0.28.1920.1052@0.28.1920.1052" timestamp="1586949076771" />
+    <state x="420" y="478" width="994" height="602" key="#xdebugger.evaluate/0.28.1920.1052@0.28.1920.1052" timestamp="1587388856338" />
     <state width="1257" height="460" key="DebuggerActiveHint" timestamp="1585660546805">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state width="1257" height="460" key="DebuggerActiveHint/0.28.1920.1052@0.28.1920.1052" timestamp="1585660546805" />
-    <state width="1893" height="380" key="GridCell.Tab.0.bottom" timestamp="1586950352110">
+    <state width="1893" height="319" key="GridCell.Tab.0.bottom" timestamp="1587395137402">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="380" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1586950352110" />
-    <state width="1893" height="380" key="GridCell.Tab.0.center" timestamp="1586950352109">
+    <state width="1893" height="319" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1587395137402" />
+    <state width="1893" height="319" key="GridCell.Tab.0.center" timestamp="1587395137400">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="380" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1586950352109" />
-    <state width="1893" height="380" key="GridCell.Tab.0.left" timestamp="1586950352109">
+    <state width="1893" height="319" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1587395137400" />
+    <state width="1893" height="319" key="GridCell.Tab.0.left" timestamp="1587395137399">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="380" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1586950352109" />
-    <state width="1893" height="380" key="GridCell.Tab.0.right" timestamp="1586950352110">
+    <state width="1893" height="319" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1587395137399" />
+    <state width="1893" height="319" key="GridCell.Tab.0.right" timestamp="1587395137401">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="380" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1586950352110" />
-    <state width="1893" height="440" key="GridCell.Tab.1.bottom" timestamp="1586949904284">
+    <state width="1893" height="319" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1587395137401" />
+    <state width="1893" height="275" key="GridCell.Tab.1.bottom" timestamp="1587395131217">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="440" key="GridCell.Tab.1.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1586949904284" />
-    <state width="1893" height="440" key="GridCell.Tab.1.center" timestamp="1586949904284">
+    <state width="1893" height="275" key="GridCell.Tab.1.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1587395131217" />
+    <state width="1893" height="275" key="GridCell.Tab.1.center" timestamp="1587395131216">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="440" key="GridCell.Tab.1.center/0.28.1920.1052@0.28.1920.1052" timestamp="1586949904284" />
-    <state width="1893" height="440" key="GridCell.Tab.1.left" timestamp="1586949904283">
+    <state width="1893" height="275" key="GridCell.Tab.1.center/0.28.1920.1052@0.28.1920.1052" timestamp="1587395131216" />
+    <state width="1893" height="275" key="GridCell.Tab.1.left" timestamp="1587395131216">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="440" key="GridCell.Tab.1.left/0.28.1920.1052@0.28.1920.1052" timestamp="1586949904283" />
-    <state width="1893" height="440" key="GridCell.Tab.1.right" timestamp="1586949904284">
+    <state width="1893" height="275" key="GridCell.Tab.1.left/0.28.1920.1052@0.28.1920.1052" timestamp="1587395131216" />
+    <state width="1893" height="275" key="GridCell.Tab.1.right" timestamp="1587395131216">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="440" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1586949904284" />
+    <state width="1893" height="275" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1587395131216" />
     <state x="495" y="197" key="SettingsEditor" timestamp="1585200255215">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -234,10 +241,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state width="960" height="526" key="XDebugger.FullValuePopup/0.28.1920.1052@0.28.1920.1052" timestamp="1585660533261" />
-    <state x="623" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1585212292158">
+    <state x="623" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1587382269165">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="623" y="260" width="672" height="678" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1585212292158" />
+    <state x="623" y="260" width="672" height="678" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1587382269164" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -254,22 +261,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cases/test_01_register.py</url>
-          <line>53</line>
+          <line>55</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scripts/handle_context.py</url>
-          <line>93</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scripts/handle_context.py</url>
-          <line>113</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cases/test_02_login.py</url>
-          <line>85</line>
+          <line>86</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -284,8 +281,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cases/test_03_recharge.py</url>
-          <line>106</line>
+          <line>104</line>
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cases/test_04_add.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/handle_context.py</url>
+          <line>209</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cases/test_05_invest.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cases/test_05_invest.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cases/test_01_register.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/handle_context.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/handle_context.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

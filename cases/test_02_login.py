@@ -20,7 +20,7 @@ from scripts.handle_excel import HandleExcel
 
 from scripts.handle_log import HandleLog
 
-from scripts.path_constants import DATA_CASES, CONFIG_REQUEST, REPORT_LOGIN_FILE
+from scripts.path_constants import DATA_CASES, CONFIG_REQUEST, REPORTS_ALL_PATH
 
 from scripts.handle_context import Handle_Re
 
@@ -45,28 +45,29 @@ class TestCaseLogin(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.one_file = open(REPORT_LOGIN_FILE, mode='a', encoding='utf-8')
-        cls.one_file.write('{:=^40s}\n'.format('开始执行用例'))
+        cls.one_file = open(REPORTS_ALL_PATH, mode='a+', encoding='utf-8')
+        cls.one_file.write('{:=^40s}\n'.format('开始执行登录接口用例'))
 
     @classmethod
     def tearDownClass(cls):
-        cls.one_file.write('{:=^40s}\n\n'.format('用例执行结束'))
+        cls.one_file.write('{:=^40s}\n\n'.format('登录接口用例执行结束'))
         cls.one_file.close()
 
     @data(*cases)
     def test_login(self, one_case):
         # 拼接完整的url
-        url = self.do_config.get_value('url', 'head_url') + one_case['url']
+        new_url = self.do_config.get_value('url', 'head_url') + one_case['url']
         # 获取请求方式
         method = one_case['method']
         # 获取input_data数据
-        input_data = one_case['input_data']
+        # input_data = one_case['input_data']
         # 对excel的input_data数据进行参数化
-        new_data = self.do_re.login_user_mobile_pwd_replace(input_data)
+        new_data = self.do_re.login_parameterization(one_case['input_data'])
         # 发送请求接收请求后的结果
-        result_real = self.do_request.send_request(url=url, data=eval(new_data), method=method).text
+        result_real = self.do_request.send_request(url=new_url, data=eval(new_data), method=method).text
 
         try:
+            self.assertIn(one_case['expected'], result_real, msg='登录接口请求成功')
             self.one_file.write('{},执行的结果为:{}\n'.format(one_case['title'], self.pass_result))
             self.do_excel.write_cell(row=one_case['case_id'] + 1,
                                      column=7,
