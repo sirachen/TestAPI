@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d91e4e2-a8e4-456c-ad4a-e113aafe523d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,10 +218,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state width="1893" height="275" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1587395568627" />
-    <state x="495" y="197" key="SettingsEditor" timestamp="1587439489513">
+    <state x="495" y="197" key="SettingsEditor" timestamp="1587541149939">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="495" y="197" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1587439489513" />
+    <state x="495" y="197" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1587541149939" />
     <state width="498" height="449" key="SwitcherDM" timestamp="1585041685773">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
