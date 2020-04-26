@@ -9,7 +9,7 @@
 '''
 
 
-from ddt import ddt, data
+from libs.ddt import ddt, data
 import unittest
 
 from scripts.handle_config import HandleConfig

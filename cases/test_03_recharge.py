@@ -8,7 +8,7 @@
 ------------------------------------
 '''
 
-from ddt import ddt, data
+from libs.ddt import ddt, data
 import unittest
 import json
 

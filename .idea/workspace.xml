@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d91e4e2-a8e4-456c-ad4a-e113aafe523d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/TestAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TestAPI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/test_03_recharge.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/test_03_recharge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/test_04_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/test_04_add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/test_05_invest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/test_05_invest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datas/datas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datas/datas.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_2020-04-20_23:05:37.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_2020-04-22_17:21:15.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/reports.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +40,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/datas" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="last_opened_file_path" value="/usr/lib/python3.6/venv" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -190,22 +194,26 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state width="1257" height="460" key="DebuggerActiveHint/0.28.1920.1052@0.28.1920.1052" timestamp="1585660546805" />
-    <state width="1893" height="275" key="GridCell.Tab.0.bottom" timestamp="1587395568626">
+    <state x="1027" y="475" width="424" height="491" key="FileChooserDialogImpl" timestamp="1587897131367">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="275" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1587395568626" />
-    <state width="1893" height="275" key="GridCell.Tab.0.center" timestamp="1587395568625">
+    <state x="1027" y="475" width="424" height="491" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1587897131367" />
+    <state width="1893" height="314" key="GridCell.Tab.0.bottom" timestamp="1587898120435">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="275" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1587395568625" />
-    <state width="1893" height="275" key="GridCell.Tab.0.left" timestamp="1587395568625">
+    <state width="1893" height="314" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1587898120435" />
+    <state width="1893" height="314" key="GridCell.Tab.0.center" timestamp="1587898120435">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="275" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1587395568625" />
-    <state width="1893" height="275" key="GridCell.Tab.0.right" timestamp="1587395568626">
+    <state width="1893" height="314" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1587898120435" />
+    <state width="1893" height="314" key="GridCell.Tab.0.left" timestamp="1587898120434">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1893" height="275" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1587395568626" />
+    <state width="1893" height="314" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1587898120434" />
+    <state width="1893" height="314" key="GridCell.Tab.0.right" timestamp="1587898120435">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1893" height="314" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1587898120435" />
     <state width="1893" height="275" key="GridCell.Tab.1.bottom" timestamp="1587395568627">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -222,10 +230,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state width="1893" height="275" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1587395568627" />
-    <state x="495" y="197" key="SettingsEditor" timestamp="1587541149939">
+    <state x="524" y="180" width="1037" height="737" key="SettingsEditor" timestamp="1587898096663">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="495" y="197" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1587541149939" />
+    <state x="524" y="180" width="1037" height="737" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1587898096663" />
     <state width="498" height="449" key="SwitcherDM" timestamp="1585041685773">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
